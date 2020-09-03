@@ -1,0 +1,120 @@
+{
+  "main": {
+    "name":"KazantsevG page",
+    "description":"Я фронтэнд разработчик. Владею в разной степени следующими технологиями: React, Redux, Bootstrap, HTML, CSS, Git",
+    "image":"profilepic.jpg",
+    "bio":"Меня зовут Геннадий, 28 лет. Живу в Москве. Имею диплом о высшем экономическом образовании. Специальность – бухгалтерский учет, анализ и аудит. Во время и после окончания учебы я долго работал в рознице. Со временем начал задумываться о смене профессии и получении другой специальности. Выбор упал на программирование интерфейсов. Мне нравится программирование, а трудности меня только закаляют. По мере возникновения новых задач осваиваю фичи и нововведения реакта, как например хуки. Спасибо, что прочитали этот пост.",
+    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "kazantsevgennadiy@gmail.com",
+    "phone": "8(985)-126-6605",
+    "github":"https://github.com/possesion",
+    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "address":{      
+      "city":"Москва  ",
+      "state":"Российская Федерация",
+      "zip": "119049"
+    },
+    "website": "",
+    "resumedownload":"https://drive.google.com/file/d/1ikkIR3v_RrHTWTvFt1Yi3VoreyWJpcc0/view?usp=sharing",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"https://www.facebook.com/Kazantsevhp",
+        "className":"fa fa-facebook"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/gennadiy-kazantsev-03994317a/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/possesion",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"*Реальный уровень знаний может отличаться от предоставленных графиков",
+    "education":[
+      {
+        "school":"Hexlet",
+        "degree":"Профессия Фронтенд-программист",
+        "graduated":"Декабрь 2019 - по настоящее время",
+        "description":"За время обучения я получил знания по computer science, опыт работы на Linux системах и приобрел фундаментальные знания в программировании. Обучился работе с системой контроля версий, модульному тестированию, работе с пакетным менеджером и овладел навыками создания приложений на ReactJS + Redux"
+      }
+    ],
+    "work":[
+      {
+        "company":"Создание Cli-приложения",
+        "title":"Работа с окружением, npm и зависимостями",
+        "years":"",
+        "description":"За время проекта научился создавать скрипты, работать с пакетным менеджером, подключать библиотеки для работы, запускать приложение на Node.js, познакомился с понятием Continuous Integration "
+      },
+      {
+        "company":"Таблицы и работа с запросами сервера",
+        "title":"React-Bootstrap, axios",
+        "years":"",
+        "description":"Во время работы над проектом научился делать и обрабатывать ajax-запросы, работать с массивами данных, фильтровать их и выводить в нужном виде на страницу. "
+      }
+    ],
+    "skills":[
+      {
+        "name":"ES6",
+        "level":"60%"
+      },
+      {
+        "name":"CSS",
+        "level":"60%"
+      },      
+      {
+        "name":"Bootstrap",
+        "level":"70%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"40%"
+      },
+      {
+        "name":"Redux",
+        "level":"40%"
+      },
+      {
+        "name": "Jest",
+        "level": "15%"
+      },
+      {
+        "name": "Linux",
+        "level": "25%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Cli приложение",
+        "category":"Несколько мини-игр",
+        "image":"cliapp.jpg",
+        "url":"https://github.com/possesion/frontend-project-lvl1"
+      },
+      {
+        "title":"Пятнашки",
+        "category":"Составьте ряд от 1 до 20",
+        "image":"tag.jpg",
+        "url":"https://codepen.io/possesion/pen/eYpzeWW"
+      },
+      {
+        "title":"Cайт туристического агентства",
+        "category":"Сделан на HTML/CSS + JS",
+        "image":"toursite.jpg",
+        "url":"https://possesion.github.io/websiteAnimate/"
+      },
+      {
+        "title":"Клиентская база данных",
+        "category":"Навигация по страницам и фильтрация",
+        "image":"clientfilter.jpg",
+        "url":"https://possesion.github.io/user-application/"
+      }
+    ]
+  }
+}
