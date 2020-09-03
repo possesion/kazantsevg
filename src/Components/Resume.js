@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 class Resume extends Component {
 
   getRandomColor() {
-    var letters = '0123456789ABCDEF';
+    var varters = '0123456789ABCDEF';
     var color = '#';
     for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+      color += varters[Math.floor(Math.random() * 16)];
     }
     return color;
   }
@@ -42,7 +42,7 @@ class Resume extends Component {
 
       <div className="row education">
          <div className="three columns header-col">
-            <h1><span>Education</span></h1>
+            <h1><span>Образование</span></h1>
          </div>
 
          <div className="nine columns main-col">
@@ -58,7 +58,7 @@ class Resume extends Component {
       <div className="row work">
 
          <div className="three columns header-col">
-            <h1><span>Work</span></h1>
+            <h1><span>Практика</span></h1>
          </div>
 
          <div className="nine columns main-col">
@@ -71,7 +71,7 @@ class Resume extends Component {
       <div className="row skill">
 
          <div className="three columns header-col">
-            <h1><span>Skills</span></h1>
+            <h1><span>Технологии</span></h1>
          </div>
 
          <div className="nine columns main-col">

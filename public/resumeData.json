@@ -1,142 +1,119 @@
 {
   "main": {
-    "name":"Nordic-Giant Project",
-    "description":"I am a web development engineer and I use react and python to develop pages. This project is a resume template that can be used as the project home page or resume page",
+    "name":"KazantsevG page",
+    "description":"Я фронтэнд разработчик. Владею в разной степени следующими технологиями: React, Redux, Bootstrap, HTML, CSS, Git",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio":"Меня зовут Геннадий, 28 лет. Живу в Москве. Имею диплом о высшем экономическом образовании. Специальность – бухгалтерский учет, анализ и аудит. Во время и после окончания учебы я долго работал в рознице. Со временем начал задумываться о смене профессии и получении другой специальности. Выбор упал на программирование интерфейсов. Мне нравится программирование, а трудности меня только закаляют. По мере возникновения новых задач осваиваю фичи и нововведения реакта, как например хуки. Спасибо, что прочитали этот пост.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
-    "github":"https://github.com/nordicgiant2/react-nice-resume",
+    "email": "kazantsevgennadiy@gmail.com",
+    "phone": "8(985)-126-6605",
+    "github":"https://github.com/possesion",
     "project":"https://github.com/nordicgiant2/react-nice-resume",
-    "address":{
-      "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+    "address":{      
+      "city":"Москва  ",
+      "state":"Российская Федерация",
+      "zip": "119049"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "",
+    "resumedownload":"https://drive.google.com/file/d/1ikkIR3v_RrHTWTvFt1Yi3VoreyWJpcc0/view?usp=sharing",
     "social":[
       {
         "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://www.facebook.com/Kazantsevhp",
         "className":"fa fa-facebook"
       },
       {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://www.linkedin.com/in/gennadiy-kazantsev-03994317a/",
         "className":"fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
-        "className":"fa fa-instagram"
-      },
-      {
         "name":"github",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://github.com/possesion",
         "className":"fa fa-github"
       }
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"*Реальный уровень знаний может отличаться от предоставленных графиков",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      },
-      {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Hexlet",
+        "degree":"Профессия Фронтенд-программист",
+        "graduated":"Декабрь 2019 - по настоящее время",
+        "description":"За время обучения я получил знания по computer science, опыт работы на Linux системах и приобрел фундаментальные знания в программировании. Обучился работе с системой контроля версий, модульному тестированию, работе с пакетным менеджером и овладел навыками создания приложений на ReactJS + Redux"
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Создание Cli-приложения",
+        "title":"Работа с окружением, npm и зависимостями",
+        "years":"",
+        "description":"За время проекта научился создавать скрипты, работать с пакетным менеджером, подключать библиотеки для работы, запускать приложение на Node.js, познакомился с понятием Continuous Integration "
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Таблицы и работа с запросами сервера",
+        "title":"React-Bootstrap, axios",
+        "years":"",
+        "description":"Во время работы над проектом научился делать и обрабатывать ajax-запросы, работать с массивами данных, фильтровать их и выводить в нужном виде на страницу. "
       }
     ],
     "skills":[
       {
-        "name":"Python",
+        "name":"ES6",
         "level":"60%"
       },
       {
-        "name":"VueJs",
-        "level":"55%"
+        "name":"CSS",
+        "level":"60%"
+      },      
+      {
+        "name":"Bootstrap",
+        "level":"70%"
       },
       {
         "name":"ReactJs",
-        "level":"50%"
+        "level":"40%"
       },
       {
-        "name":"CSS",
-        "level":"90%"
+        "name":"Redux",
+        "level":"40%"
       },
       {
-        "name":"PHP",
-        "level":"80%"
+        "name": "Jest",
+        "level": "15%"
       },
       {
-        "name":"Swift",
-        "level":"50%"
-      },
-      {
-        "name":"JAVA",
-        "level":"80%"
+        "name": "Linux",
+        "level": "25%"
       }
     ]
   },
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"Cli приложение",
+        "category":"Несколько мини-игр",
+        "image":"cliapp.jpg",
+        "url":"https://github.com/possesion/frontend-project-lvl1"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Пятнашки",
+        "category":"Составьте ряд от 1 до 20",
+        "image":"tag.jpg",
+        "url":"https://codepen.io/possesion/pen/eYpzeWW"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title":"Cайт туристического агентства",
+        "category":"Сделан на HTML/CSS + JS",
+        "image":"toursite.jpg",
+        "url":"https://possesion.github.io/websiteAnimate/"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
+        "title":"Клиентская база данных",
+        "category":"Навигация по страницам и фильтрация",
+        "image":"clientfilter.jpg",
+        "url":"https://possesion.github.io/user-application/"
       }
     ]
   }

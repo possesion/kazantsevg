@@ -23,11 +23,11 @@ class Header extends Component {
 	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" className="nav">
-            <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
-            <li><a className="smoothscroll" href="#about">About</a></li>
-	         <li><a className="smoothscroll" href="#resume">Resume</a></li>
-            <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a className="smoothscroll" href="#contact">Contact</a></li>
+            <li className="current"><a className="smoothscroll" href="#home">Главная</a></li>
+            <li><a className="smoothscroll" href="#about">БИО</a></li>
+	         <li><a className="smoothscroll" href="#resume">Резюме</a></li>
+            <li><a className="smoothscroll" href="#portfolio">Портфолио</a></li>
+            <li><a className="smoothscroll" href="#contact">Контакты</a></li>
          </ul>
       </nav>
 
@@ -38,7 +38,7 @@ class Header extends Component {
             <h3>{description}.</h3>
             <hr />
             <ul className="social">
-               <a href={project} className="button btn project-btn"><i className="fa fa-book"></i>Project</a>
+               <a href={project} className="button btn project-btn"><i className="fa fa-book"></i>Репозиторий</a>
                <a href={github} className="button btn github-btn"><i className="fa fa-github"></i>Github</a>
             </ul>
          </div>
