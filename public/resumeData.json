@@ -8,7 +8,7 @@
     "email": "kazantsevgennadiy@gmail.com",
     "phone": "8(985)-126-6605",
     "github":"https://github.com/possesion",
-    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "project":"https://github.com/possesion/kazantsevg",
     "address":{      
       "city":"Москва  ",
       "state":"Российская Федерация",
@@ -94,7 +94,7 @@
       {
         "title":"Cli приложение",
         "category":"Несколько мини-игр",
-        "image":"cliapp.jpg",
+        "image":"cliapplication.jpg",
         "url":"https://github.com/possesion/frontend-project-lvl1"
       },
       {
