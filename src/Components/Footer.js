@@ -1,34 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Footer extends Component {
-  render() {
+const Footer = (props) => {
+  const { data: { social } } = props;
 
-    if(this.props.data){
-      var networks= this.props.data.social.map(function(network){
-        return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
-      })
-    }
+  const networks = social.map((network) => {
+    return <li key={network.name}><a href={network.url} target='_blank'><i className={network.className}></i></a></li>;
+  });
 
-    return (
-      <footer>
-
-     <div className="row">
+  return (
+    <footer>
+      <div className="row">
         <div className="twelve columns">
-           <ul className="social-links">
-              {networks}
-           </ul>
+          <ul className="social-links">
+            {networks}
+          </ul>
 
-           <ul className="copyright">
-              <li>&copy; Казанцев Геннадий</li>
-              <li>2020 г.</li>
-           </ul>
+          <ul className="copyright">
+            <li>&copy; Казанцев Геннадий</li>
+            <li>2020 г.</li>
+          </ul>
 
         </div>
-        <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open"></i></a></div>
-     </div>
-  </footer>
-    );
-  }
+        <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home" target='_blank'><i className="icon-up-open"></i></a></div>
+      </div>
+    </footer>
+  );
+
 }
 
 export default Footer;

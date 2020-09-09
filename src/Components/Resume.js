@@ -1,94 +1,82 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Resume extends Component {
+const Resume = (props) => {
+  const { data: { skillmessage, skills, education, work } } = props;
 
-  getRandomColor() {
-    var varters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += varters[Math.floor(Math.random() * 16)];
+  const getRandomColor = () => {
+    const varters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      const hashColor = varters[Math.floor(Math.random() * 16)]
+      color += hashColor;
     }
     return color;
   }
-  
-  render() {
 
-    if(this.props.data){
-      var skillmessage = this.props.data.skillmessage;
-      var education = this.props.data.education.map(function(education){
-        return <div key={education.school}><h3>{education.school}</h3>
-        <p className="info">{education.degree} <span>&bull;</span><em className="date">{education.graduated}</em></p>
-        <p>{education.description}</p></div>
-      })
-      var work = this.props.data.work.map(function(work){
-        return <div key={work.company}><h3>{work.company}</h3>
-            <p className="info">{work.title}<span>&bull;</span> <em className="date">{work.years}</em></p>
-            <p>{work.description}</p>
-        </div>
-      })
-
-      var skills = this.props.data.skills.map((skills)=>{
-        var className = 'bar-expand '+skills.name.toLowerCase();
-        return (
-          <li key={skills.name}>
-            <span style={{width:skills.level, backgroundColor:this.getRandomColor()}}className={className}></span><em>{skills.name}</em>
-          </li>
-        )
-      })
-    }
-
-    return (
-      <section id="resume">
-
-      <div className="row education">
-         <div className="three columns header-col">
-            <h1><span>Образование</span></h1>
-         </div>
-
-         <div className="nine columns main-col">
-            <div className="row item">
-               <div className="twelve columns">
-                 {education}
-               </div>
-            </div>
-         </div>
-      </div>
-
-
-      <div className="row work">
-
-         <div className="three columns header-col">
-            <h1><span>Практика</span></h1>
-         </div>
-
-         <div className="nine columns main-col">
-          {work}
-        </div>
+  const educationInfo = education.map(({ school, degree, description, graduated }) => {
+    return <div key={school}><h3>{school}</h3>
+      <p className="info">{degree} <span>&bull;</span><em className="date">{graduated}</em></p>
+      <p>{description}</p></div>
+  })
+  const workInfo = work.map(({ company, title, years, description }) => {
+    return <div key={company}><h3>{company}</h3>
+      <p className="info">{title}<span>&bull;</span> <em className="date">{years}</em></p>
+      <p>{description}</p>
     </div>
+  })
+
+  const skillsInfo = skills.map(({ name, level }) => {
+    const className = `bar-expand ${name.toLowerCase()}`;
+    return (
+      <li key={name}>
+        <span style={{ width: level, backgroundColor: getRandomColor() }} className={className}></span><em>{name}</em>
+      </li>
+    )
+  })
 
 
+  return (
+    <section id="resume">
+      <div className="row education">
+        <div className="three columns header-col">
+          <h1><span>Образование</span></h1>
+        </div>
+
+        <div className="nine columns main-col">
+          <div className="row item">
+            <div className="twelve columns">
+              {educationInfo}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row work">
+        <div className="three columns header-col">
+          <h1><span>Практика</span></h1>
+        </div>
+
+        <div className="nine columns main-col">
+          {workInfo}
+        </div>
+      </div>
 
       <div className="row skill">
+        <div className="three columns header-col">
+          <h1><span>Технологии</span></h1>
+        </div>
+        <div className="nine columns main-col">
 
-         <div className="three columns header-col">
-            <h1><span>Технологии</span></h1>
-         </div>
+          <p>{skillmessage}</p>
 
-         <div className="nine columns main-col">
-
-            <p>{skillmessage}
-            </p>
-
-				<div className="bars">
-				   <ul className="skills">
-					  {skills}
-					</ul>
-				</div>
-			</div>
+          <div className="bars">
+            <ul className="skills">
+              {skillsInfo}
+            </ul>
+          </div>
+        </div>
       </div>
-   </section>
-    );
-  }
-}
+    </section>
+  );
+};
 
 export default Resume;
